@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightgray;
+}
+
+section {
+  color: white;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.header-logo {}
+
+.header-nav {}
+
+.header-nav__item {
+  display: inline;
+  margin-left: .75rem;
+  /* font - Myriad Pro regular 18pt */
+}
+
+main {
+  display: flex;
+  padding: 1rem;
+}
+
+.hero__main-heading {
+  font-size: 5rem;
+  margin: 0;
+  /* font - Arial bold 160pt */
+}
+
+.hero__main-text {
+  /* font - Baskerville regular 32pt */
+}
+
+/*
+ * Aside / Wayfinder
+*/
+
+aside {
+  transform: rotate(-90deg);
+  width: 400px;
+}
+
+.aside-wayfinder {}
+
+.aside-wayfinder .blue-border {
+  display: inline-block;
+  width: 50px;
+  height: 5px;
+  border-top: 2px solid blue;
+}
+
+.aside-wayfinder p {
+  display: inline-block;
+}
+
+.aside-wayfinder .dotted-border {
+  display: inline-block;
+  width: 50px;
+  height: 5px;
+  border-top: 2px dashed grey;
+}
