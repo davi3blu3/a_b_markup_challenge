@@ -2,18 +2,18 @@
   "name": "a_b_markup_challenge",
   "version": "1.0.0",
   "description": "creating html and css from photoshop design",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "http-server ./"
   },
   "keywords": [
     "html",
-    "css"
+    "css",
+    "font-awesome"
   ],
   "author": "davi3blu3",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.2",
     "http-server": "^0.11.1"
   }
 }

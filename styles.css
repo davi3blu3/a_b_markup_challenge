@@ -1,11 +1,24 @@
+@charset "utf-8";
+@import 'node_modules/@fortawesome/fontawesome-free/css/all.css';
+@font-face {
+  font-family: 'Myriad Pro';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro'), url('./assets/fonts/myriad-pro/MYRIADPRO-SEMIBOLD.woff') format('woff');
+}
+
+/* blue highlights - #1e9bd7 */
+
 body {
   margin: 0;
   padding: 0;
-  background-color: lightgray;
 }
 
-section {
+section.hero {
+  position: relative;
   color: white;
+  padding: 2.5rem;
+  background-color: lightgray;
 }
 
 .bold-text {
@@ -17,17 +30,36 @@ section {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  height: 62px;
+  margin-bottom: 5rem;
 }
 
 .header-logo {}
 
 .header-nav {}
 
+.header-nav__list {
+  vertical-align: middle;
+  margin: 18px 0;
+}
+
 .header-nav__item {
   display: inline;
-  margin-left: .75rem;
-  /* font - Myriad Pro regular 18pt */
+  margin-left: 1rem;
+  font-family: 'Myriad Pro';
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.header-nav button {
+  background: transparent;
+  border: 1px solid #1e9bd7;
+  border-radius: 1rem;
+  padding: 4px 30px 2px;
+  font-family: 'Myriad Pro';
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #1e9bd7;
 }
 
 main {
@@ -36,13 +68,28 @@ main {
 }
 
 .hero__main-heading {
-  font-size: 5rem;
+  font-size: 7rem;
   margin: 0;
-  /* font - Arial bold 160pt */
+  font-family: Arial;
 }
 
 .hero__main-text {
-  /* font - Baskerville regular 32pt */
+  font-family: Baskerville;
+  font-size: 1.5rem;
+  width: 75%;
+}
+
+.hero__cta {
+  position: absolute;
+  left: calc(50% - 16px);
+  bottom: -16px;
+  color: #1e9bd7;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.hero__cta i {
+  text-shadow: 1px -1px 2px #8c8c8c;
 }
 
 /*
@@ -60,7 +107,7 @@ aside {
   display: inline-block;
   width: 50px;
   height: 5px;
-  border-top: 2px solid blue;
+  border-top: 2px solid #1e9bd7;
 }
 
 .aside-wayfinder p {
@@ -71,5 +118,9 @@ aside {
   display: inline-block;
   width: 50px;
   height: 5px;
-  border-top: 2px dashed grey;
+  border-top: 2px dashed #8c8c8c;
+}
+
+.icon-space__right {
+  margin-right: 5px;
 }
