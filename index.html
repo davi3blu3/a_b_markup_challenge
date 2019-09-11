@@ -12,31 +12,20 @@
       sizes="32x32"
       href="./assets/favicon/favicon-32x32.png"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="./assets/favicon/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/favicon/favicon-16x16.png"
-    />
   </head>
   <body>
     <section class="hero">
       <div class="hero__overlay"></div>
       <header>
-        <div class="header-logo">
+        <div>
           <img
             src="./assets/images/bernstein_logo.png"
             alt="A|B Bernstein Logo"
           />
         </div>
-        <nav class="header-nav">
-          <ul class="header-nav__list">
+        <nav>
+          <i class="fas fa-bars fa-2x header-nav__collapsed"></i>
+          <ul class="header-nav__list header-nav__show">
             <li class="header-nav__item">What We Do</li>
             <li class="header-nav__item">Who We Advise</li>
             <li class="header-nav__item">How We Think</li>
@@ -67,10 +56,12 @@
         </aside>
         <article>
           <h1 class="hero__main-heading">
-            Progress built<br />on partnership.
+            Progress built <br class="hero__linebreak" />on partnership.
           </h1>
           <p class="hero__main-text">
-            Every day is a new opportunity to invest in what matters most.<br />
+            Every day is a new opportunity to invest in what matters most.
+          </p>
+          <p class="hero__main-text">
             Whatever you are investing for, we’re here to help you find the best
             ways to start
             <span class="bold-text">Making Money Meaningful</span

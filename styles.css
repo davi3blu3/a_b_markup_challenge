@@ -1,4 +1,20 @@
 @charset "utf-8";
+/*
+ *  * * * CONTENTS * * *
+ *
+ *  I. EXTERNAL FONTS
+ *  II. GLOBAL / HELPER CLASSES
+ *  III. HERO SECTION
+ *    a. Header & Navigation
+ *    b. Main Content
+ *    c. Aside / Wayfinder
+ *  IV. MEDIA QUERIES
+ *    a. Medium devices
+ *    b. Large devices
+ */
+
+/* I. EXTERNAL FONTS */
+
 @import 'node_modules/@fortawesome/fontawesome-free/css/all.css';
 @font-face {
   font-family: 'Myriad Pro';
@@ -7,12 +23,22 @@
   src: local('Myriad Pro'), url('./assets/fonts/myriad-pro/MYRIADPRO-SEMIBOLD.woff') format('woff');
 }
 
-/* blue highlights - #1e9bd7 */
+/* II. GLOBAL / HELPER CLASSES */
 
 body {
   margin: 0;
   padding: 0;
 }
+
+.bold-text {
+  font-weight: bold;
+}
+
+.icon-space__right {
+  margin-right: 5px;
+}
+
+/* III. HERO SECTION */
 
 section.hero {
   position: relative;
@@ -30,26 +56,18 @@ section.hero {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, .75);
+  background-color: rgba(0, 0, 0, .8);
   z-index: -1;
 }
 
-.bold-text {
-  font-weight: bold;
-}
-
-/* HEADER */
+/* III.a. HERO SECTION - Header & Navigation */
 
 header {
   display: flex;
   justify-content: space-between;
   height: 62px;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
-
-.header-logo {}
-
-.header-nav {}
 
 .header-nav__list {
   vertical-align: middle;
@@ -75,25 +93,39 @@ header {
   color: #1e9bd7;
 }
 
+.header-nav__collapsed {
+  display: block;
+  margin-top: 14px;
+}
+
+.header-nav__show {
+  display: none;
+}
+
+/* III.b. HERO SECTION - Main Content */
+
 main {
-  display: flex;
-  padding: 1rem;
+  display: block;
+  padding: 1rem 1rem 3rem 1rem;
 }
 
 .hero__main-heading {
-  font-size: 6rem;
+  font-size: 4rem;
   margin: 0;
   font-family: Arial;
 }
 
+.hero__linebreak {
+  display: none;
+}
+
 .hero__main-text {
   font-family: Baskerville;
-  font-size: 1.5rem;
-  width: 75%;
+  font-size: 1.25rem;
 }
 
 .hero__cta {
-  width: 300px;
+  width: 220px;
   height: 60px;
   margin-left: auto;
   margin-right: -2.5rem;
@@ -104,7 +136,7 @@ main {
 }
 
 .hero__cta-learn-more {
-  width: 240px;
+  width: 160px;
   font-family: 'Myriad Pro';
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -127,30 +159,25 @@ main {
 
 .hero__scroll-down {
   position: absolute;
-  left: calc(50% - 16px);
-  bottom: -16px;
+  left: calc(50% - 15px);
+  bottom: -20px;
   color: #1e9bd7;
   background-color: white;
   border-radius: 50%;
+  height: 30px;
+  width: 30px;
 }
 
 .hero__scroll-down i {
-  text-shadow: 1px -1px 2px #8c8c8c;
+  position: absolute;
+  left: calc(50% - 16px);
+  bottom: 1px;
 }
 
-/*
- * Aside / Wayfinder
-*/
+/* III.c. HERO SECTION - Aside / Wayfinder */
 
 aside {
-  width: 300px;
-}
-
-.aside-wayfinder {
-  position: absolute;
-  transform: rotate(-90deg);
-  left: -45px;
-  top: 354px;
+  height: 5rem;
 }
 
 .aside-wayfinder .blue-border {
@@ -177,6 +204,58 @@ aside {
   margin: 0 1px;
 }
 
-.icon-space__right {
-  margin-right: 5px;
+/* IV. MEDIA QUERIES */
+
+/* IV.a. Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+  header {
+    margin-bottom: 5rem;
+  }
+  main {
+    display: flex;
+  }
+  aside {
+    width: 300px;
+  }
+  .aside-wayfinder {
+    position: absolute;
+    transform: rotate(-90deg);
+    left: -45px;
+    top: 354px;
+  }
+  .hero__main-heading {
+    font-size: 4.25rem;
+  }
+  .hero__main-text {
+    font-size: 1.5rem;
+  }
+  .hero__cta {
+    width: 300px;
+    height: 60px;
+  }
+  .hero__cta-learn-more {
+    width: 240px;
+    padding: 23px 0;
+  }
+}
+
+/* IV.b. Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+  .header-nav__collapsed {
+    display: none;
+  }
+  .header-nav__show {
+    display: block;
+  }
+  .hero__main-heading {
+    font-size: 6rem;
+  }
+  .hero__linebreak {
+    display: inline;
+  }
+  .hero__main-text {
+    width: 75%;
+  }
 }
