@@ -18,7 +18,7 @@ Run a simple local server:
 npm run-script serve
 ```
 
-Then you should be able to view the project with a modern browser by navigating to: (http://localhost:8080/)
+Then you should be able to view the project with a modern browser by navigating to: (http://localhost:8080/), or the address specified in your terminal.
 
 ### Notes
 
