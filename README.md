@@ -4,7 +4,7 @@ This is my solution to a markup challenge for Alliance Bernstein, building out a
 
 ### Installing
 
-To launch the project locally, `git clone` into your desired location and navigate into the project directory.
+To launch the project locally, `git clone` into your desired location, then navigate into the project directory.
 
 Install dependencies:
 
@@ -18,7 +18,7 @@ Run a simple local server:
 npm run-script serve
 ```
 
-Then you should be able to view the project with a modern browser my navigating to: (http://localhost:8080/)
+Then you should be able to view the project with a modern browser by navigating to: (http://localhost:8080/)
 
 ### Notes
 
