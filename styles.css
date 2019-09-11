@@ -19,6 +19,19 @@ section.hero {
   color: white;
   padding: 2.5rem;
   background-color: lightgray;
+  background: url(./assets/images/sailboat_background.png) no-repeat center center fixed;
+  background-size: cover;
+  z-index: -5;
+}
+
+.hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .75);
+  z-index: -1;
 }
 
 .bold-text {
@@ -130,14 +143,14 @@ main {
 */
 
 aside {
-  width: 400px;
+  width: 300px;
 }
 
 .aside-wayfinder {
   position: absolute;
   transform: rotate(-90deg);
   left: -45px;
-  top: 358px;
+  top: 354px;
 }
 
 .aside-wayfinder .blue-border {
