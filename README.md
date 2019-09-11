@@ -32,6 +32,6 @@ In my interview with Shannon, she mentioned she was wanting a developer who woul
 
 - Dave Harned
 
-## License
+### License
 
 This project is licensed under the ISC License - see (https://opensource.org/licenses/ISC) for details
