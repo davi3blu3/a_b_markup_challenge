@@ -68,7 +68,7 @@ main {
 }
 
 .hero__main-heading {
-  font-size: 7rem;
+  font-size: 6rem;
   margin: 0;
   font-family: Arial;
 }
@@ -80,6 +80,39 @@ main {
 }
 
 .hero__cta {
+  width: 300px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: -2.5rem;
+  margin-bottom: -2.5rem;
+  display: flex;
+  background-color: white;
+  color: #1e9bd7;
+}
+
+.hero__cta-learn-more {
+  width: 240px;
+  font-family: 'Myriad Pro';
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  padding: 23px 0;
+}
+
+.hero__cta-arrow {
+  width: 60px;
+  height: 60px;
+  background-color: #1e9bd7;
+  color: white;
+  text-align: center;
+}
+
+.hero__cta-arrow i {
+  margin: 22px 23px;
+}
+
+.hero__scroll-down {
   position: absolute;
   left: calc(50% - 16px);
   bottom: -16px;
@@ -88,7 +121,7 @@ main {
   border-radius: 50%;
 }
 
-.hero__cta i {
+.hero__scroll-down i {
   text-shadow: 1px -1px 2px #8c8c8c;
 }
 
@@ -97,28 +130,38 @@ main {
 */
 
 aside {
-  transform: rotate(-90deg);
   width: 400px;
 }
 
-.aside-wayfinder {}
+.aside-wayfinder {
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -45px;
+  top: 358px;
+}
 
 .aside-wayfinder .blue-border {
   display: inline-block;
-  width: 50px;
-  height: 5px;
+  width: 62px;
+  height: 3px;
   border-top: 2px solid #1e9bd7;
 }
 
 .aside-wayfinder p {
   display: inline-block;
+  font-family: 'Myriad Pro';
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #1e9bd7;
+  margin: 0 4px;
 }
 
 .aside-wayfinder .dotted-border {
   display: inline-block;
-  width: 50px;
-  height: 5px;
-  border-top: 2px dashed #8c8c8c;
+  width: 20px;
+  height: 3px;
+  border-top: 1px solid #8c8c8c;
+  margin: 0 1px;
 }
 
 .icon-space__right {
