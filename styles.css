@@ -82,7 +82,7 @@ header {
   text-transform: uppercase;
 }
 
-.header-nav button {
+.header-nav__button {
   background: transparent;
   border: 1px solid #1e9bd7;
   border-radius: 1rem;
