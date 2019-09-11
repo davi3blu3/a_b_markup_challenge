@@ -4,7 +4,7 @@ This is my solution to a markup challenge for Alliance Bernstein, building out a
 
 ### Installing
 
-To launch the project locally, `git clone` into your desired location and navigate into the project directory.
+To launch the project locally, `git clone` into your desired location, then navigate into the project directory.
 
 Install dependencies:
 
