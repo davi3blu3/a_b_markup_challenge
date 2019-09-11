@@ -4,7 +4,7 @@ This is my solution to a markup challenge for Alliance Bernstein, building out a
 
 ### Installing
 
-To launch the project locally, `git clone` into your desired location, then navigate into the project directory.
+To launch the project locally open your terminal or command prompt, `git clone` into your desired location, then navigate into the project directory.
 
 Install dependencies:
 
@@ -22,7 +22,7 @@ Then you should be able to view the project with a modern browser by navigating 
 
 ### Notes
 
-I was not able to match the fonts in the project exactly, as Klavika appears to be a commercial Adobe font. I went with alternatives suggested by my version of Photoshop CC. Also in the case of font-awesome icons, I went with free icons where 'pro' versions might have gotten closer to the look provided in the design.
+I wasn't able to match the fonts in the project exactly, as Klavika appears to be a commercial Adobe font. I went with alternatives suggested by my version of Photoshop CC. Also in the case of font-awesome icons, I went with free icons where 'pro' versions might have gotten closer to the look provided in the design.
 
 The requirement did not ask for JavaScript, so on smaller screens the menu turns into a hamburger icon, but does not expand on click and is just for demonstration.
 
